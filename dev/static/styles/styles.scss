@@ -1,0 +1,107 @@
+/* Layout styles */
+@import "layout/header";
+@import "layout/footer";
+@import "layout/sections/hero";
+/* Layout styles */
+
+/* Abstracts styles */
+@import "abstracts/mixins";
+@import "abstracts/vars";
+@import "abstracts/utilities";
+@import "abstracts/animations";
+/* Abstracts styles */
+
+
+/* Components styles */
+@import "components/form";
+@import "components/navigation";
+@import "components/buttons";
+/* Components styles */
+
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 10px
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    line-height: 1.4;
+    font-family: var(--main-font);
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul[class],
+ol[class] {
+    list-style: none;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video,
+textarea {
+    vertical-align: middle;
+}
+
+textarea {
+    resize: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-size: inherit;
+}
+
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+section {
+    position: relative;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+input,
+select,
+button {
+    outline: none;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: var(--content-size);
+    width: 100%;
+}
