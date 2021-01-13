@@ -1,0 +1,65 @@
+.section-qa {
+  margin-top: 15rem;
+
+  .title {
+    color: white;
+  }
+}
+
+.accordion {
+  padding: 5rem 0;
+  .wrapper {
+    border-top: 1px solid white;
+
+    &:last-child {
+      border-bottom: 1px solid white;
+    }
+  }
+
+  .accordion-button {
+    padding: 2.7rem 0 2.7rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    color: white;
+    border: none;
+    background-color: transparent;
+    font-family: $second-font;
+    text-align: left;
+    font-weight: 300;
+
+    .icon {
+      transition: all 0.3s;
+      height: 2.4rem;
+      width: 2.4rem;
+      align-self: center;
+    }
+
+    .subtitle {
+      max-width: 90%;
+    }
+  }
+
+  .text {
+    color: white;
+    margin-bottom: 2.7rem;
+
+    a {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+
+  .panel {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+
+  .accordion-active {
+    .icon {
+      transform: rotate(-45deg);
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@keyframes moveRight {
+  from {
+    transform: translateX(-1040px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes transition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes heroBg {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

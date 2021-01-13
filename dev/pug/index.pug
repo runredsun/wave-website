@@ -1,9 +1,27 @@
 extends common/layout
 
+block title
+    | Создание сайтов на Tilda. Студия WAVE
+block header
+  header.header
+    include common/header
 //- Main content
 block content
+  //- Main page
   main.main
-    //- Main page
-    include includes/index/main-page
+    include includes/index/hero
+    include includes/index/clients
+    include includes/index/tariffs
+    include includes/index/portfolio
+    .container.u-padding 
+      include includes/index/forwhom
+      include includes/index/building-process
+    include includes/index/youtube
+    .blue-bg
+      .container.u-padding
+        include includes/index/recommendation
+        include includes/index/order-reasons
+        include includes/index/qa
+
 
     //- и другие блоки

@@ -1,0 +1,50 @@
+.section-recommendation {
+  padding-top: 10rem;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    @include respond(tab-port) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+.about {
+  flex: 1;
+  color: white;
+  @include respond(tab-port) {
+    order: 1;
+    max-width: 40rem;
+  }
+
+  .title {
+    text-align: left;
+  }
+
+  .text {
+    margin-top: 3rem;
+    color: white;
+  }
+
+  .link {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    margin-top: 3rem;
+  }
+}
+
+.image-wrapper {
+  max-width: 60rem;
+  position: relative;
+
+  .image-abs {
+    position: absolute;
+    width: 16rem;
+    top: -6rem;
+    right: 0;
+  }
+}

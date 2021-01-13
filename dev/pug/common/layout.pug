@@ -1,24 +1,32 @@
 doctype html
-html(lang="en")
+html(lang="ru")
     block head
         head
             meta(charset="utf-8")
-            title Title your site
+            title 
+                block title 
             meta(content="width=device-width, initial-scale=1" name="viewport")
             meta(content="ie=edge" http-equiv="x-ua-compatible")
+            link(rel="shortcut icon", href="https://static.tildacdn.com/tild6532-6161-4931-b162-306632633638/favicon_2.ico", type="image/x-icon")
             //- Main styles
             link(rel="stylesheet" href="static/css/styles.min.css")
             //- Main styles
+            //- Fonts
+            link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap") 
+            //- Fonts
 
     body
+        .progress-bar
+        include popup
         block header
-            include header
         block content
         block footer
             include footer
 
         block scripts
-            //- Main scripts
+            script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js")
+            script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js")
             script(src='static/js/main.js')
-            //- Main scripts
+            Main scripts
+            
 

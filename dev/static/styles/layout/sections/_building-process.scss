@@ -1,0 +1,72 @@
+.section-building-process {
+  margin-top: 10rem;
+
+  .title {
+  }
+  .text {
+    margin: 0 auto;
+    max-width: 79rem;
+    text-align: center;
+
+    @include respond(tab-port) {
+      max-width: 50rem;
+    }
+  }
+
+  .building-steps {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    @include respond(tab-port) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .step {
+      margin-bottom: 5rem;
+      max-width: 26.5rem;
+      @include respond(tab-port) {
+        max-width: 30rem;
+      }
+
+      &:nth-child(2) {
+        margin: 0 6rem;
+
+        @include respond(tab-port) {
+          margin: 0;
+        }
+      }
+      .subtitle {
+        font-size: 2.5rem;
+
+        &.arrows {
+          position: relative;
+          &:before {
+            content: '\2192';
+            font-size: 3.9rem;
+            position: absolute;
+            top: 0;
+            left: -8rem;
+            @include respond(tab-port) {
+              display: none;
+            }
+          }
+          &:after {
+            @include respond(tab-port) {
+              display: none;
+            }
+            content: '\2192';
+            font-size: 3.9rem;
+            position: absolute;
+            top: 0;
+            right: 1rem;
+            transform: translateX(100%);
+          }
+        }
+      }
+      .image {
+        max-width: 16rem;
+      }
+    }
+  }
+}

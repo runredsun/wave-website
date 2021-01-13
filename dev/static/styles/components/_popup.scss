@@ -1,0 +1,59 @@
+.popup-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s;
+}
+
+.popup-wrapper.popup-open {
+  z-index: 12;
+  opacity: 1;
+}
+.popup {
+  padding: 4.5rem;
+  background-color: white;
+  transition: all 0.4s;
+  transform: translateY(300px) scale(0.6);
+  text-align: center;
+  max-width: 56rem;
+
+  .title {
+    font-size: 3.2rem;
+    font-weight: 300;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+
+    input {
+      padding: 1rem 0;
+      font-size: 1.8rem;
+      border: none;
+      border-bottom: 1px solid $main-color;
+      margin-top: 3rem;
+    }
+    .form-btn {
+      margin-top: 3rem;
+    }
+
+    .politics {
+      margin-top: 3rem;
+      font-size: 1.4rem;
+      line-height: 1.55;
+
+      a {
+        color: $main-color;
+        text-decoration: underline;
+      }
+    }
+  }
+}

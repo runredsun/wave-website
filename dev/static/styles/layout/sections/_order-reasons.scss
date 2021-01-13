@@ -1,0 +1,39 @@
+.section-order-reasons {
+  margin-top: 10rem;
+
+  .title {
+    color: white;
+  }
+
+  .wrapper {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include respond(tab-port) {
+      justify-content: center;
+    }
+  }
+  .button {
+    margin: 0 auto;
+  }
+}
+
+.block {
+  margin: 2.5rem 0;
+  max-width: 47rem;
+  min-width: 35rem;
+
+  .image {
+    max-width: 8rem;
+  }
+
+  .subtitle {
+    margin: 2rem 0;
+    color: white;
+  }
+
+  .text {
+    color: white;
+  }
+}

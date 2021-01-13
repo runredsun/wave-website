@@ -1,0 +1,87 @@
+$images: (
+  'one': 'aquatoria.png',
+  'two': 'ylabs.png',
+  'three': 'cio_on_demand.png',
+  'four': 'jet_preview.png',
+  'five': 'barometr.png',
+  'six': 'skillfactory.png',
+  'seven': 'bg.jpg',
+  'eight': 'bg.png',
+);
+.section-portfolio {
+  margin-top: 15rem;
+  .button {
+    margin: 0 auto;
+  }
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  .wrapper {
+    overflow: hidden;
+    // flex: 1 35rem;
+    width: 25%;
+    @include respond(tab-port) {
+      flex: 1 35rem;
+      min-width: 100%;
+    }
+  }
+
+  @each $name, $image in $images {
+    .item-#{$name} {
+      background-image: url('../images/content/' + $image);
+      background-position: center bottom;
+      background-size: cover;
+      min-height: 47rem;
+      transition: all 0.4s;
+      position: relative;
+      @include respond(tab-port) {
+        min-height: 100vh;
+      }
+
+      @media screen and (max-width: 460px) {
+        min-height: 55rem;
+      }
+      .hover {
+        background-color: #0e25457e;
+        bottom: 0;
+        top: 0;
+        right: 0;
+        left: 0;
+        position: absolute;
+        opacity: 0;
+        transition: all 0.3s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 5rem;
+        @include respond(tab-port) {
+          opacity: 1;
+        }
+
+        &-image {
+          transform: scale(0.7);
+        }
+
+        .description {
+          text-align: center;
+          font-family: $second-font;
+          color: #fff;
+          font-size: 2.5rem;
+          font-weight: 300;
+          max-width: 28rem;
+        }
+      }
+
+      &:hover {
+        transform: scale(1.05);
+        .hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.section-seo-blue {
+  background: url('../images/general/bg_blue.svg');
+  padding: 30rem 0 15rem 0;
+
+  .seo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.about {
+  flex: 1 39rem;
+  max-width: 46rem;
+  .title {
+    line-height: 1.1;
+  }
+
+  .list {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+  }
+}
+
+.image-box {
+  flex: 1 46rem;
+  img {
+    min-height: 100%;
+  }
+}
+
+.seo-tariff {
+  margin-top: 8rem;
+  text-align: center;
+  .title {
+    color: white;
+  }
+
+  .subtitle {
+    margin: 2rem 0;
+    color: white;
+    font-size: 4.9rem;
+    font-weight: 300;
+  }
+
+  .text {
+    color: white;
+  }
+}

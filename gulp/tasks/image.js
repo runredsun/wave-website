@@ -1,9 +1,8 @@
 const imagemin = require('gulp-imagemin'),
     cache = require('gulp-cache'),
-    imgCompress  = require('imagemin-jpeg-recompress'),
+    imgCompress = require('imagemin-jpeg-recompress'),
     imgPATH = {
-        "input": ["./dev/static/images/**/*.{png,jpg,gif,svg}",
-            '!./dev/static/images/svg/*'],
+        "input": "./dev/static/images/**/*.{png,jpg,gif,svg}",
         "output": "./build/static/images/"
     };
 
@@ -29,4 +28,3 @@ module.exports = function () {
             .pipe($.gulp.dest(imgPATH.output));
     });
 };
-
